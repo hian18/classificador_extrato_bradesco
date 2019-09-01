@@ -33,5 +33,7 @@ classificacao=map(classificar,resultado_grupo)
 
 lista=list(classificacao)
 negativos=([x['valor'] for x in lista if x['valor'] < 0])
+positivos=([x['valor'] for x in lista if x['valor'] > 0])
 
 print(sum(negativos))
+print(sum(positivos))
