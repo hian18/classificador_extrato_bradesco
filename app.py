@@ -23,10 +23,10 @@ def classificar(grupo):
         if x == 'Docto':
             ob['pk']=grupo[i+1]
             ob['valor']=float(grupo[i+2].replace(',','.'))
-            continue
+            return ob
        
         ob['classificador'].append(x)
-    return ob
+    
 
 
 classificacao=map(classificar,resultado_grupo)
